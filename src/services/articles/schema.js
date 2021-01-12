@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 
 const ArticleSchema = new Schema(
   {
-    headLine: { type: String, required: true },
+    headLine: String,
     subHead: String,
-    content: { type: String, required: true },
+    content: String,
     category: {
-      name: Number,
+      name: String,
       img: String,
     },
     author: {
